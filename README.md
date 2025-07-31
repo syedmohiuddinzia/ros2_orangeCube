@@ -130,7 +130,51 @@ Expected topics:
 - /mavros/rc/in
 - /mavros/battery
 
+### View Data
+#### View heartbeat
+```
+ros2 topic echo /mavros/heartbeat
+```
+#### View IMU
+```
+ros2 topic echo /mavros/imu/data
+```
+### Visualize in Rviz2
+```
+rviz2
+```
+- Add displays for:
+  - TF
+  - IMU
+  - Pose
+  - RobotMode
 
-g in Cube Orange via USB and run:
+### Plot Data in rqt
+```
+rqt
+```
+Plot topics like:
+```
+/mavros/imu/data
+```
+```
+/mavros/battery
+```
+```
+/mavros/rc/in
+```
 
-`
+### Troubleshooting
+| Problem                      | Solution                                                      |
+| ---------------------------- | ------------------------------------------------------------- |
+| No serial data               | Check `dmesg`, verify `/dev/ttyACM0`, user in `dialout` group |
+| Topics not showing           | Recheck launch args, especially plugin YAML paths             |
+| Can't echo topic             | Try sourcing workspace again, verify `ros2 topic list`        |
+| Slow data rate or delay      | Tune `config_yaml` parameters                                 |
+| Conflicting MAVLink versions | Ensure correct PX4/APM firmware compatibility                 |
+
+### Additional Resources
+- MAVROS Wiki
+- PX4 Docs
+- ArduPilot Docs
+- GeographicLib
