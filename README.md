@@ -138,7 +138,7 @@ ros2 launch mavros node.launch \
 ros2 topic list
 ```
 Expected topics:
-[1](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/1.png)
+![1](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/1.png)
 
 ### View Data
 #### View heartbeat
