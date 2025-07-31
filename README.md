@@ -4,7 +4,16 @@
 
 ---
 ## Cube Orange
+[Cube Orange](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/cube_orange.jpg)
 
+The Cube Orange (CubePilot) is an advanced open-source autopilot. Key features include:
+- Compatible with ArduPilot and PX4 firmware
+- STM32H7 microcontroller with more processing power than older Pixhawk models
+- IMU redundancy for improved reliability
+- Integrated vibration isolation
+- Standard interfaces (GPS, CAN, UART, I2C, etc.)
+- Modular carrier boards (Cube+ Carrier, ADS-B, etc.)
+For ROS/MAVROS use, it typically runs ArduPilot (APM) and communicates using MAVLink over USB or telemetry radios.
 
 ## Prerequisites
 
