@@ -4,7 +4,7 @@
 
 ---
 ## Cube Orange
-[Cube Orange](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/cube_orange.jpg)
+![Cube Orange](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/cube_orange.jpg)
 
 The Cube Orange (CubePilot) is an advanced open-source autopilot. Key features include:
 - Compatible with ArduPilot and PX4 firmware
