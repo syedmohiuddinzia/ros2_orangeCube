@@ -138,12 +138,7 @@ ros2 launch mavros node.launch \
 ros2 topic list
 ```
 Expected topics:
-- /mavros/state
-- /mavros/imu/data
-- /mavros/global_position/global
-- /mavros/local_position/pose
-- /mavros/rc/in
-- /mavros/battery
+[1](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/1.png)
 
 ### View Data
 #### View heartbeat
