@@ -3,6 +3,8 @@
 > Full setup guide to connect and use the **Cube Orange** flight controller with **ROS 2 (Humble)** via **MAVROS** over a USB serial interface.
 
 ---
+## Cube Orange
+
 
 ## Prerequisites
 
