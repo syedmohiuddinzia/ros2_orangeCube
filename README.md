@@ -116,13 +116,7 @@ You’ll likely find `/dev/ttyACM0`.
 
 #### Run MAVROS
 ```
-ros2 launch mavros node.launch \
-  fcu_url:=/dev/ttyACM0:115200 \
-  gcs_url:="" \
-  tgt_system:=1 \
-  tgt_component:=1 \
-  pluginlists_yaml:=$(ros2 pkg prefix mavros)/share/mavros/launch/px4_pluginlists.yaml \
-  config_yaml:=$(ros2 pkg prefix mavros)/share/mavros/launch/px4_config.yaml
+ros2 launch mavros node.launch   fcu_url:=/dev/ttyACM0:115200   gcs_url:=udp://@   tgt_system:=1   tgt_component:=1   pluginlists_yaml:=/home/smzia/ros2_ws/install/mavros/share/mavros/launch/apm_pluginlists.yaml   ros2 topic echo /imu/dataros2 topic echo /imu/dataros2 topic echo /imu/dataros2 topic echo /imu/dataconfig_yaml:=/home/smzia/ros2_ws/install/mavros/share/mavros/launch/apm_config.yaml
 ```
 | Arg                | Description                          |
 | ------------------ | ------------------------------------ |
@@ -145,19 +139,13 @@ Expected topics:
 ```
 ros2 topic echo /mavros/heartbeat
 ```
+![2](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/2.png)
+
 #### View IMU
 ```
 ros2 topic echo /mavros/imu/data
 ```
-### Visualize in Rviz2
-```
-rviz2
-```
-- Add displays for:
-  - TF
-  - IMU
-  - Pose
-  - RobotMode
+![3](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/3.png)
 
 ### Plot Data in rqt
 ```
@@ -165,14 +153,9 @@ rqt
 ```
 Plot topics like:
 ```
-/mavros/imu/data
+/mavros/imu/data/orientation
 ```
-```
-/mavros/battery
-```
-```
-/mavros/rc/in
-```
+![4](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/4.png)
 
 ### Troubleshooting
 | Problem                      | Solution                                                      |
