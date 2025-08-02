@@ -3,6 +3,7 @@
 > Full setup guide to connect and use the **Cube Orange** flight controller with **ROS 2 (Humble)** via **MAVROS** over a USB serial interface.
 
 ### Introduction
+![0](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/0.png)
 MAVROS is a ROS (Robot Operating System) package that serves as a communication bridge between ROS and MAVLink-based autopilots such as PX4 and ArduPilot. It allows developers to control drones, monitor telemetry, and integrate autonomous flight behaviors using ROS tools. </br>
 This guide focuses on setting up MAVROS in ROS 2 Humble on Ubuntu 22.04 with the Orange Cube (CubePilot) flight controller. The Orange Cube is a powerful flight controller based on the Pixhawk family, commonly used in research and commercial drones for its modular design, reliable performance, and compatibility with ArduPilot/PX4 firmware.
 
@@ -118,6 +119,7 @@ You’ll likely find `/dev/ttyACM0`.
 ```
 ros2 launch mavros node.launch   fcu_url:=/dev/ttyACM0:115200   gcs_url:=udp://@   tgt_system:=1   tgt_component:=1   pluginlists_yaml:=/home/smzia/ros2_ws/install/mavros/share/mavros/launch/apm_pluginlists.yaml   ros2 topic echo /imu/dataros2 topic echo /imu/dataros2 topic echo /imu/dataros2 topic echo /imu/dataconfig_yaml:=/home/smzia/ros2_ws/install/mavros/share/mavros/launch/apm_config.yaml
 ```
+![0_1](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/0_1.png)
 | Arg                | Description                          |
 | ------------------ | ------------------------------------ |
 | `fcu_url`          | Serial port connected to Cube        |
