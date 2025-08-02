@@ -1,8 +1,7 @@
 # Visualizing `/mavros/imu/data` Using imu_filter_madgwick in ROS 2
 This guide explains how to filter and visualize IMU data published on `/mavros/imu/data` using the `imu_filter_madgwick` node in ROS 2.
-![gif](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/visualizing%20IMU%20data%20with%20imu_filter_madgwick%20on%20ROS%202/pic/gif_.gif)
+![gif](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/1%20-%20visualizing%20IMU%20data%20with%20imu_filter_madgwick%20on%20ROS%202/pic/gif_.gif)
 ---
-
 ### Step 1: Install `imu_filter_madgwick`
 
 If not already installed, install the package:
@@ -18,7 +17,7 @@ Make sure your IMU data is publishing on /mavros/imu/data:
 ```bash
 ros2 topic echo /mavros/imu/data
 ```
-![1](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/visualizing%20IMU%20data%20with%20imu_filter_madgwick%20on%20ROS%202/pic/1.png)
+![1](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/1%20-%20visualizing%20IMU%20data%20with%20imu_filter_madgwick%20on%20ROS%202/pic/1.png)
 You should see IMU data messages with orientation, angular velocity, and linear acceleration fields.
 
 ### Step 3: Run imu_filter_madgwick_node with proper remapping and parameters
@@ -28,7 +27,7 @@ ros2 run imu_filter_madgwick imu_filter_madgwick_node --ros-args \
   -r imu/data_raw:=/mavros/imu/data \
   -p use_mag:=false
 ```
-![2](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/visualizing%20IMU%20data%20with%20imu_filter_madgwick%20on%20ROS%202/pic/2.png)
+![2](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/1%20-%20visualizing%20IMU%20data%20with%20imu_filter_madgwick%20on%20ROS%202/pic/2.png)
 This will publish filtered IMU data on /imu/data.
 
 ### Step 4: Verify filtered IMU output
@@ -36,7 +35,7 @@ Check the filtered output:
 ```bash
 ros2 topic echo /imu/data
 ```
-![3](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/visualizing%20IMU%20data%20with%20imu_filter_madgwick%20on%20ROS%202/pic/3.png)
+![3](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/1%20-%20visualizing%20IMU%20data%20with%20imu_filter_madgwick%20on%20ROS%202/pic/3.png)
 
 ### Step 5: Visualize filtered IMU data in rviz2
 1- Start rviz2:
@@ -49,7 +48,7 @@ rviz2
 - Set the topic to /imu/data.
 - Set the fixed frame (usually base_link or the frame used by your IMU messages).
 3- You should now see a 3D visualization of IMU orientation and angular velocity.
-![4](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/visualizing%20IMU%20data%20with%20imu_filter_madgwick%20on%20ROS%202/pic/4.png)
+![4](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/1%20-%20visualizing%20IMU%20data%20with%20imu_filter_madgwick%20on%20ROS%202/pic/4.png)
 
 ### Optional: Create a launch file
 You can create a ROS 2 launch file to automate the above. Example:
