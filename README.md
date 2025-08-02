@@ -117,7 +117,7 @@ You’ll likely find `/dev/ttyACM0`.
 
 #### Run MAVROS
 ```
-os2 launch mavros node.launch   fcu_url:=/dev/ttyACM0:115200   gcs_url:=udp://@   tgt_system:=1   tgt_component:=1   pluginlists_yaml:=/home/smzia/ros2_ws/install/mavros/share/mavros/launch/apm_pluginlists.yaml   config_yaml:=/home/smzia/ros2_ws/install/mavros/share/mavros/launch/apm_config.yaml
+ros2 launch mavros node.launch   fcu_url:=/dev/ttyACM0:115200   gcs_url:=udp://@   tgt_system:=1   tgt_component:=1   pluginlists_yaml:=/home/smzia/ros2_ws/install/mavros/share/mavros/launch/apm_pluginlists.yaml   config_yaml:=/home/smzia/ros2_ws/install/mavros/share/mavros/launch/apm_config.yaml
 ```
 ![0_1](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/pic/0_1.png)
 | Arg                | Description                          |
