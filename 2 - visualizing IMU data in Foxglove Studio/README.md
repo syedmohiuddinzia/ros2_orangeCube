@@ -1,6 +1,6 @@
 # Visualizing /mavros/imu/data in Foxglove Studio
 
-## Foxglove
+## What is Foxglove
 Foxglove is a powerful visualization and debugging tool for robotics and autonomous systems, often used with ROS (Robot Operating System). It helps developers inspect, analyze, and interact with real-time data from their robots.It is a platform to record, upload, organize, and visualize multimodal log data such as time series, text logs, video, 3D, maps, and more. It is most often used in hardware, robotics, and physical AI.
 
 ![0](https://github.com/syedmohiuddinzia/ros2_orangeCube/blob/main/2%20-%20visualizing%20IMU%20data%20in%20Foxglove%20Studio/pic/0.png)
