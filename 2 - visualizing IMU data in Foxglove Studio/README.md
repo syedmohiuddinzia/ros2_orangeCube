@@ -37,7 +37,7 @@ If not already running:
 ```
 ros2 launch rosbridge_server rosbridge_websocket_launch.xml
 ```
-It should say: `Rosbridge WebSocket server started on port 9090`
+It should say: `Rosbridge WebSocket server started on port <port>`
 
 ### 2. Open Foxglove Studio
 - Go to: https://studio.foxglove.dev/
