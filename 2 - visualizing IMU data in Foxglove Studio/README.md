@@ -33,7 +33,7 @@ Foxglove is a powerful visualization and debugging tool for robotics and autonom
   - Inspecting robot sensor logs
 
 ### 1. Start rosbridge_server
-If not already running:
+Launch Ros Bridge Server
 ```
 ros2 launch rosbridge_server rosbridge_websocket_launch.xml
 ```
