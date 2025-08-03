@@ -1,5 +1,35 @@
 # Visualizing /mavros/imu/data in Foxglove Studio
 
+## Foxglove
+Foxglove is a powerful visualization and debugging tool for robotics and autonomous systems, often used with ROS (Robot Operating System). It helps developers inspect, analyze, and interact with real-time data from their robots.It is a platform to record, upload, organize, and visualize multimodal log data such as time series, text logs, video, 3D, maps, and more. It is most often used in hardware, robotics, and physical AI.
+
+### What Foxglove Does
+- Foxglove provides:
+  - 3D visualization of robot data (IMU, LiDAR, transforms, etc.)
+  - Topic inspection (view ROS topics and messages live)
+  - Time-series plots for sensor data
+  - Map and camera feeds
+  - Panel-based layout (customizable dashboard)
+  - Playback of recorded data (e.g., ROS bag files)
+  - Remote robot debugging
+- Compatible With
+  - ROS 1 and ROS 2
+  - MCAP files (newer alternative to ROS bags)
+  - WebSockets, ROS bridges, and Data logs
+  - Sensors like IMUs, GPS, LiDAR, cameras, etc.
+- Two Versions
+  - Foxglove Studio (Desktop App)
+    - Full-featured GUI with plugins
+      - Runs on Windows, macOS, Linux
+    - Foxglove Web
+      - Runs in a browser
+      - Useful for remote access to robot data
+- Example Use Cases
+  - Debugging a robot’s navigation stack
+  - Visualizing a drone’s flight path and orientation
+  - Monitoring a self-driving car’s perception system
+  - Inspecting robot sensor logs
+
 ### 1. Start rosbridge_server
 If not already running:
 ```
